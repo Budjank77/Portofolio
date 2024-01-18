@@ -137,6 +137,52 @@ body {
 /* CLOSE HOME */
 
 
+/* OPEN ABOUT */
+.grup-text-about {
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.heading-about {
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.ftco-about ul.about-info {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.ftco-about ul.about-info li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.about-name-1 {
+  width: 130px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-name-2 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  width: 100%;
+}
+
+.titik-dua-about {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* CLOSE ABOUT */
+
+
 /* OPEN HUBUNGI KAMI */
 .blog {
   background-color: #F5BD1F;
@@ -229,6 +275,145 @@ body {
 }
 /* CLOSE HUBUNGI KAMI */
 
+/* OPEN PORTOFOLIO */
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #c685f7;
+}
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-box .portfolio-info {
+  background-color: rgba(153, 38, 240, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 1s;
+  transition-property: all;
+}
+/* CLOSE PORTOFOLIO */
+
+/* OPEN SKILL */
+    /*** Skills ***/
+    #skill .progress {
+      height: 5px;
+      border-radius: 5px;
+  }
+  
+  #skill .progress .progress-bar-50 {
+      width: 50%;
+      border-radius: 5px;
+      transition: 3s;
+  }
+  
+  #skill .progress .progress-bar-80 {
+      width: 80%;
+      border-radius: 5px;
+      transition: 3s;
+  }
+
+  #skill .progress .progress-bar-70 {
+    width: 70%;
+    border-radius: 5px;
+    transition: 3s;
+}
+  
+  #skill .nav-pills .nav-link {
+      color: #000;
+  }
+  
+  #skill .nav-pills .nav-link.active {
+      color: #FFFFFF;
+  }
+  
+  #skill .tab-content hr {
+      width: 30px;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      background-color: #F5BD1F;
+  }
+  
+      .progress {
+          display: flex;
+          height: 1rem;
+          overflow: hidden;
+          font-size: .75rem;
+          background-color: #e9ecef;
+          border-radius: 10px;
+      }
+  /* Custom Colors for Skills */
+  .progress-bar.bg-primary {
+      background-color: #007bff !important;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      white-space: nowrap;
+      transition: width 0.6s ease;
+  }
+  
+  .progress-bar.bg-warning {
+      background-color: #ffc107 !important;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      white-space: nowrap;
+      transition: width 0.6s ease;
+  }
+  
+  .progress-bar.bg-danger {
+      background-color: #dc3545 !important;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      white-space: nowrap;
+      transition: width 0.6s ease;
+  }
+  
+  .progress-bar.bg-info {
+      background-color: #0dcaf0 !important;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      white-space: nowrap;
+      transition: width 0.6s ease;
+  }
+/* CLOSE SKILL */
+
 /*-----Testimonial-------*/
 .heading {
   text-align: center;
@@ -283,18 +468,6 @@ body {
   z-index: 99;
 }
 
-.testimonial {
-  min-height: 375px;
-  position: relative;
-  background: url(../img/banner-testimonial.jpg);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden; /* Menyembunyikan konten yang mungkin meluap dari kotak testimonial */
-}
-
-/* Lapisan warna hitam dengan blur */
 .testimonial::before {
   content: "";
   position: absolute;
@@ -302,9 +475,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(1, 1, 1, 0.5); /* Warna hitam dengan opacity 0.3 */
-  filter: blur(10px); /* Menambahkan efek blur dengan radius 5px */
+  background-color: rgba(1, 1, 1, 0.5);
+  transform: rotate(0deg); /* Tambahkan baris ini untuk menghilangkan efek miring */
 }
+
+.testimonial {
+  min-height: 375px;
+  position: relative;
+  background: url(../img/banner-testimonial.jpg) center/cover no-repeat; /* Perbarui ini */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+
 
 /* Konten testimonial */
 .testimonial-content {
@@ -626,3 +810,79 @@ padding-bottom:50px;
   }
 }
 /* close footer style */
+
+
+/*========= OPEN RESPONSIVE =========*/
+@media only screen and (max-width: 767px) {
+  .grup-text-home {
+    text-align: center !important;
+  }
+
+  .heading-home-pani {
+    font-size: 34px !important;
+  }
+
+  .img-home {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grup-text-about {
+    text-align: center;
+  }
+
+  .img-portofolio {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grup-text-skill {
+    text-align: center;
+  }
+
+  .tab-pane {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .grup-text-home {
+    text-align: center !important;
+  }
+
+  .heading-home-pani {
+    font-size: 34px !important;
+  }
+
+  .img-home {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grup-text-about {
+    text-align: center;
+  }
+
+  .img-portofolio {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grup-text-skill {
+    text-align: center;
+  }
+
+  .tab-pane {
+    text-align: center;
+  }
+
+  .btn-home-cs {
+    width: 100%;
+  }
+  
+  .grup-sosmed-home {
+    display: grid;
+    text-align: center;
+  }
+}
+/*========= close RESPONSIVE =========*/
