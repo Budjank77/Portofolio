@@ -3,6 +3,7 @@
 /* Open Style Body */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 /* Close Style Body */
@@ -13,14 +14,60 @@ body {
 }
 
 .margin-top-web-1 {
+  padding: 80px;
+  margin-top: 220px;
+}
+
+.margin-top-web-0 {
   margin-top: 150px;
 }
 
-.margin-top-web-2 {
-  margin-top: 170px;
+/* Close Style Margin */
+
+/* OPEN CAROUSEL */
+.shadow-effect {
+  background: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+border:1px solid #ECECEC;
+}
+#customers-testimonials .item {
+  text-align: center;
+  padding: 30px;
+  margin-bottom:20px;
+  opacity: .7;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 6;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
 }
 
-/* Close Style Margin */
+.card-cs {
+  width: 324.14px;
+  height: 395px;
+  padding: 15px;
+  margin: 15px auto;
+  background: #ffffff;
+  box-shadow: 10px 10px 50px rgba(112, 112, 112, 0.1);
+  border-radius: 26px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #F5BD1F;
+}
+
+.carousel-control-next-icon {
+  background-color: #F5BD1F;
+}
+
+.img-card-lanyar {
+  width: 100%;
+}
+/* CLOSE CAROUSEL */
 
 /* OPEN NAV */
 .nav-item-cs {
@@ -282,14 +329,14 @@ body {
   height: 18.5rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
-  border-top: 0.5rem solid #c685f7;
+  border-top: 0.5rem solid #ffc107;
 }
 .portfolio-box img {
   width: 100%;
   height: 100%;
 }
 .portfolio-box .portfolio-info {
-  background-color: rgba(153, 38, 240, 0.75);
+  background-color: rgba(240, 196, 38, 0.75);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -320,6 +367,11 @@ body {
   visibility: visible;
   transition-duration: 1s;
   transition-property: all;
+}
+
+.img-design-graphic {
+  width: 100%;
+  height: 370px;
 }
 /* CLOSE PORTOFOLIO */
 
@@ -813,7 +865,7 @@ padding-bottom:50px;
 
 
 /*========= OPEN RESPONSIVE =========*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 770px) {
   .grup-text-home {
     text-align: center !important;
   }
@@ -833,7 +885,7 @@ padding-bottom:50px;
 
   .img-portofolio {
     width: 100%;
-    height: 100%;
+    height: 70%;
   }
 
   .grup-text-skill {
@@ -845,7 +897,7 @@ padding-bottom:50px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1299px) {
+@media screen and (min-width: 771px) and (max-width: 1299px) {
   .grup-text-home {
     text-align: center !important;
   }
@@ -876,9 +928,9 @@ padding-bottom:50px;
     text-align: center;
   }
 
-  .btn-home-cs {
+  /* .btn-home-cs {
     width: 100%;
-  }
+  } */
   
   .grup-sosmed-home {
     display: grid;
